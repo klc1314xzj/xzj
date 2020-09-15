@@ -8,22 +8,22 @@
   ### 6.优化设计。编写单元测试将使用户从调用者的角度观察、思考，特别是使用TDD驱动开发的开发方式，会让使用者把程序设计成易于调用和可测试，并且解除软件中的耦合。
   ### 7.单元测试的好与坏不仅直接关系到测试成本（因为如果单元测试中易发现的问题拖到后期测试发现，那么其成本将成倍数上升），而且也会直接影响到产品质量，因为可能就是由于代码中的某一个小错误就导致了整个产品的质量降低一个指标，或者导致更严重的后果
 '''
-int arr[] =new int[5];
-for(int i=0;i<arr.length;i++)
+int a[] =new int[5];
+for(int i=0;i<a.length;i++)
 	{
-		for(int j=0;j<arr.length-i-1;j++)
+		for(int j=0;j<a.length-i-1;j++)
 		{
-			if(arr[j]>arr[j+1])
+			if(a[j]>a[j+1])
 			{
-				int temp = arr[j+1];
-				arr[j+1]=arr[j];
-				arr[j]=temp;
+				int temp = a[j+1];
+				a[j+1]=a[j];
+				a[j]=temp;
 			}
 		}
 	}
 	System.out.print("排序后的数组是：");
-	for(int i=0;i<arr.length;i++)
-		System.out.print(arr[i]+"\t");
+	for(int i=0;i<a.length;i++)
+		System.out.print(a[i]+"\t");
 	}
   
   '''
@@ -32,8 +32,8 @@ for(int i=0;i<arr.length;i++)
   +  (2): 11,12,6,8,71
   +  (3): 18,14,6,8,71
   +  (4): 1,14,62,8,71
-  
-  
+  ![](https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=java%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E7%9A%84%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B&step_word=&hs=0&pn=13&spn=0&di=14630&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=2&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=-1&cs=2092898854%2C2137380722&os=3205612262%2C3465875305&simid=0%2C0&adpicid=0&lpn=0&ln=161&fr=&fmq=1600182333123_R&fm=result&ic=&s=undefined&hd=&latest=&copyright=&se=&sme=&tab=0&width=&height=&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fimages2015.cnblogs.com%2Fblog%2F1080934%2F201612%2F1080934-20161223143429292-883708690.png&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bvgks52f_z%26e3Bv54AzdH3FrwgxtgqtAzdH3FrAzdH3Fmd890mb_z%26e3Bip4s&gsm=e&rpstart=0&rpnum=0&islist=&querylist=&force=undefined)
+ 
   
   
   
